@@ -4,8 +4,6 @@ Trabalho Final de **Desenvolvimento Web** (HTML, CSS, JavaScript e PHP) · Novem
 
 Site de um centro automotivo: o cliente consulta serviços e peças, monta um orçamento e cadastra o carro. A gestão dos clientes fica em uma área restrita do administrador, feita em PHP com PDO e MySQL.
 
-**Repositório:** https://github.com/PedroDev-05/Mecatec
-
 ## Integrantes e divisão de tarefas
 
 | Integrante | O que fez no trabalho |
