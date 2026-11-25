@@ -1,15 +1,20 @@
 # Mecatec Centro Automotivo
 
-Trabalho Final de **Desenvolvimento Web** (HTML, CSS, JavaScript e PHP).
+Trabalho Final de **Desenvolvimento Web** (HTML, CSS, JavaScript e PHP) · Novembro de 2026
 
 Site de um centro automotivo: o cliente consulta serviços e peças, monta um orçamento e cadastra o carro. A gestão dos clientes fica em uma área restrita do administrador, feita em PHP com PDO e MySQL.
 
-## Integrantes
+**Repositório:** https://github.com/PedroDev-05/Mecatec
 
-- Gabriel Dettogni Gomes
-- Caio Henrique dos Santos Pinto
-- João Pedro Pereira Ferreira
-- Marcos Vinicius Silva de Oliveira
+## Integrantes e divisão de tarefas
+
+| Integrante | O que fez no trabalho |
+|---|---|
+| Gabriel Dettogni Gomes | Testes no XAMPP e prints das telas |
+| Gabriel Luz dos Santos Rocha | Filtros de serviços e peças |
+| Caio Henrique dos Santos Pinto | Banco de dados e CRUD em PHP com PDO |
+| João Pedro Pereira Ferreira | GitHub, README e escrita do relatório |
+| Marcos Vinicius Silva de Oliveira | Estrutura em HTML das páginas, menu e rodapé; CSS e layout para o celular |
 
 ## O que o site faz
 
@@ -24,14 +29,14 @@ Site de um centro automotivo: o cliente consulta serviços e peças, monta um or
 | Tecnologia | Uso no projeto |
 |---|---|
 | **HTML** | Várias páginas com menu e rodapé em comum, tags semânticas (`header`, `nav`, `main`, `section`, `article`, `footer`) e formulários com `label`. |
-| **CSS** | Arquivo separado (`assets/style.css`), layout com Grid e Flexbox e responsivo com `@media` e a meta `viewport`. |
+| **CSS** | Arquivo separado (`assets/style.css`), layout com Grid e Flexbox, responsivo com `@media` e a meta `viewport`. |
 | **JavaScript** | `assets/app.js`: menu do celular, filtros, orçamento com `localStorage`, máscara de telefone, validação do formulário e confirmação ao excluir. |
 | **PHP + PDO + MySQL** | CRUD da tabela `clientes` com *prepared statements*, validação no servidor, sessão e senha com hash no login do administrador. |
 
 ## Estrutura do projeto
 
 ```
-mecatec/
+Mecatec/
 ├── index.php            Página inicial
 ├── servicos.php         Serviços com filtro
 ├── pecas.php            Peças com filtro
@@ -53,16 +58,16 @@ mecatec/
 
 ## Como rodar (XAMPP)
 
-1. Copie a pasta `mecatec` para `C:\xampp\htdocs\`.
+1. Baixe o projeto (botão **Code > Download ZIP** no GitHub, ou `git clone https://github.com/PedroDev-05/Mecatec.git`) e coloque a pasta em `C:\xampp\htdocs\`. O `index.php` deve ficar direto dentro dela, sem uma pasta repetida no meio.
 2. Abra o XAMPP e inicie o **Apache** e o **MySQL**.
 3. Acesse `http://localhost/phpmyadmin`, vá em **Importar** e envie o arquivo `database.sql`. Isso cria o banco `mecatec` e a tabela `clientes`.
-4. Abra `http://localhost/mecatec/`.
+4. Abra no navegador `http://localhost/NOME_DA_PASTA/` (por exemplo, `http://localhost/Mecatec/`).
 
-Se o Apache estiver em outra porta (por exemplo 8080), use `http://localhost:8080/mecatec/`.
+Se o Apache estiver em outra porta (por exemplo 8080), use `http://localhost:8080/NOME_DA_PASTA/`.
 
 ## Área do administrador
 
-- Endereço: `http://localhost/mecatec/admin.php` (não aparece no menu do site).
+- Endereço: `http://localhost/NOME_DA_PASTA/admin.php` (não aparece no menu do site).
 - Usuário: `admin`
 - Senha: `Mecatec@2026`
 
